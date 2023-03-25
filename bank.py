@@ -1,4 +1,4 @@
-#baank.py
+#bank.py
 #Author: Sarah Hastings
 #read in int, print out, add and return in euro.cent
 
