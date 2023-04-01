@@ -7,24 +7,6 @@
 #https://www.datacamp.com/tutorial/python-datetime
 
 #from datetime import date #first need to import "datetime" to work with dates as date objects.
-# Extract today date
-#today = date.today()
-
-#if today.weekday() == 0:
-#    print("Yes, unfortunately today is a weekday.")
-#elif today.weekday() == 1:
-#    print("Yes, unfortunately today is a weekday.")
-#elif today.weekday() == 2:
-#    print("Yes, unfortunately today is a weekday.")
-#elif today.weekday() == 3:
-#    print("Yes, unfortunately today is a weekday.")
-#elif today.weekday() == 4:
-#    print("Yes, unfortunately today is a weekday.")
-#elif today.weekday() == 5:
-#    print("It is the weekend, yay!")
-#else:
-#    print("It is the weekend, yay!")
-
 
 #Below is shorter option, tidier code 
 from datetime import datetime
