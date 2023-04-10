@@ -1,0 +1,6 @@
+This is a sample text file to count the number of 'e's in this file, used for weekly task week 07.
+Test
+E e E e 
+
+
+
