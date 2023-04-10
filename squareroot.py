@@ -1,4 +1,4 @@
-#Weekly tak 06
+#Weekly task 06
 #Author: Sarah Hastings
 #This program takes a positive floating-point number as input and outputs an approximation of its square root.
 #This program will use the square root function - newton method
