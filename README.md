@@ -9,29 +9,51 @@ Weekly Task number 1:
 ________________________________________
 $ hello world.py File 1 - Week 1 task called hello world. This file should contain a python program that displays Hello World! when it is run.
 Code: 
+
 ``print("Hello World!")``
 
 [hello world.py](https://github.com/Sarahlouhast/pands-problems-sheet/blob/main/helloworld.py)
 
 Weekly Task number 2:
 ________________________________________
-$ bank.py File 2 - Week 2 task called bank.py This program should prompt the user and read in two money amounts (in cent) Add the two amounts Print out the answer in a human readable format with a euro sign and decimal point between the euro and cent of the amount For example $ python bank.py Enter amount1(in cent): 65 Enter amount2(in cent): 180 The sum of these is €2.45
+$ bank.py 
+
+File 2 - Week 2 task called bank.py This program should prompt the user and read in two money amounts (in cent) Add the two amounts Print out the answer in a human readable format with a euro sign and decimal point between the euro and cent of the amount. 
+
+For example $ python bank.py Enter amount1(in cent): 65 Enter amount2(in cent): 180 The sum of these is €2.45
+
 Code:
+
+``
 #Prompt the user to enter integer amounts 
 num1 = int(input("Enter amount1(in cent):"))
 num2 =  int(input("Enter amount2(in cent):"))
 sum= num1 + num2                                    #Calculate the sum of the values entered
 format_sum = format(sum/100)                        #Format the value
 print (f"The sum of these is €{format_sum}")
+``
+
 Code Explanation:
+
+[bank.py](https://github.com/Sarahlouhast/pands-problems-sheet/blob/main/bank.py)
+
 References:
-https://www.w3schools.com/python/python_numbers.asp  https://www.w3schools.com/python/python_howto_add_two_numbers.asp https://stackabuse.com/format-number-as-currency-string-in-python/ 
+
+https://www.w3schools.com/python/python_numbers.asp 
+https://www.w3schools.com/python/python_howto_add_two_numbers.asp 
+https://stackabuse.com/format-number-as-currency-string-in-python/ 
+
 
 Weekly Task number 3:
 ________________________________________
-$ accounts.py File 3 - Week 3 task called accounts.py This program that reads in a 10 character account number and outputs the account number with only the last 4 digits showing (and the first 6 digits replaced with Xs). Modify the program to deal with account numbers of any length. 
+$ accounts.py 
+
+File 3 - Week 3 task called accounts.py This program that reads in a 10 character account number and outputs the account number with only the last 4 digits showing (and the first 6 digits replaced with Xs). Modify the program to deal with account numbers of any length. 
 For example $ python accounts.py Please enter an 10 digit account number: 1234567890 XXXXXX7890 
+
 Code:
+
+``
 while True:
     accountno = input("Please enter an 10 digit account number:")
     if len(accountno) !=10:
@@ -43,13 +65,19 @@ while True:
 
 account_no_1 = input("Please enter an account number: ")
 print("x" * (len(account_no_1) - 4) + account_no_1[-4:])
+``
 
 Code Explanation:
 This code will take only input of 10 numbers, keep asking until the user enters 10 numbers, print error message if 10 digits are not entered. Extra step to the program will modify the program to deal with account numbers of any length, and assuming the next step is to display only the last 4 characters, all other numbers will be replaced with Xs and the end result printed out.
+
+[accounts.py](https://github.com/Sarahlouhast/pands-problems-sheet/blob/main/accounts.py)
+
 References:
+
 https://www.w3schools.com/python/python_strings_slicing.asp  
 https://www.freecodecamp.org/news/python-slicing-how-to-slice-an-array/  
 https://www.w3schools.com/python/ref_string_rjust.asp 
+
 
 Weekly Task number 4:
 ________________________________________
