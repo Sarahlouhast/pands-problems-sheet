@@ -6,12 +6,14 @@
 #Reference   https://www.w3schools.com/python/python_datetime.asp , 
             #https://www.programiz.com/python-programming/datetime/current-datetime , 
             #https://www.datacamp.com/tutorial/python-datetime
-            
-from datetime import datetime       #Firstly need to import "datetime" to work with dates
+            #https://pythontic.com/datetime/date/weekday 
 
-weekno = datetime.today().weekday() # Get Day Number from weekday
+
+from datetime import datetime        #Firstly need to import "datetime" to work with dates
+
+weekno = datetime.today().weekday()  #Get Day Number from weekday, storing this in a variable called weekno
  
-if weekno < 5:
+if weekno < 5:                       #Using the weekday method integer values for 0-4 relate to Monday-Friday, while 5,6 are Saturday,Sunday, <5 here will relate to any weekdays
     print("Yes, unfortunately today is a weekday.")
 else:  
-    print("It is the weekend, yay!") # 5 Sat, 6 Sun
+    print("It is the weekend, yay!") #If not <5, then here 5(Saturday), 6 (Sunday) will relate to weekend days

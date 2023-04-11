@@ -119,7 +119,9 @@ References:
 ## Weekly Task number 5
 ________________________________________
 
-File 5 - Week 5 task, called [weekday.py](https://github.com/Sarahlouhast/pands-problems-sheet/blob/main/weekday.py). This program outputs whether or not today is a weekday. An example of running this program on a Thursday is given below.
+File 5 - Week 5 task, called [weekday.py](https://github.com/Sarahlouhast/pands-problems-sheet/blob/main/weekday.py). 
+
+This program outputs whether or not today is a weekday. An example of running this program on a Thursday is given below.
 
 For example 
 An example of running it on a weekday is as follows:Yes, unfortunately today is a weekday. 
@@ -138,8 +140,10 @@ else:
 
 
 Code Explanation:
-Firstly, we must import module "datetime" to work with dates in Python. 
 
+Firstly, we must import module "datetime" to work with dates in Python. 
+Using the datetime.today() to check the current local datetime, next the weekday() method returns the day of the week as an integer, where Monday is 0 and Sunday is 6, this will be storied in a variable called weekno.
+Using the weekday method as integer values for 0-4 relate to Monday-Friday, while 5,6 are Saturday,Sunday, <5 will relate to any weekdays. If not <5, then 5(Saturday), 6 (Sunday) will relate to weekend days. The result will print out the given statement according to which day of the week it is.
 
 
 References:
@@ -147,7 +151,9 @@ References:
 https://www.w3schools.com/python/python_datetime.asp   
 https://www.programiz.com/python-programming/datetime/current-datetime  
 https://www.datacamp.com/tutorial/python-datetime 
+https://pythontic.com/datetime/date/weekday 
 
+            
 
 ## Weekly Task number 6
 ________________________________________
