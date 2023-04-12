@@ -5,7 +5,7 @@ This file contains the files for the weekly tasks saved to location [pands-probl
 Below is a list of each file name and what the program will do once executed.
 
 ## Weekly Task number 1
-________________________________________
+
 
 File 1 - Week 1 task called [hello world.py](https://github.com/Sarahlouhast/pands-problems-sheet/blob/main/helloworld.py). This file should contain a python program that displays Hello World! when it is run.
 
