@@ -70,6 +70,7 @@ print("x" * (len(account_no_1) - 4) + account_no_1[-4:])
 ```
 
 Code Explanation:
+
 Using a while loop this This code will take only input of 10 numbers and keep asking until the user enters 10 numbers, printing an error message if 10 digits are not entered. Slicing is used to access the last 4 characters. The rjust function (right-justified) is used to fill the characters to the fill and replace with "x", while keeping the data to the right the same. You will see in the comments the extra step to the program which will modify the program to deal with account numbers of any length, and assuming the next step is to display only the last 4 characters, all other numbers will be replaced with Xs and the end result printed out.
 
 
@@ -115,6 +116,7 @@ Else is needed for odd numbers, where remainder is 1, multiply *3 +1.
 And finally once n is 1, this will be printed and the program will end.                    
 
 References:
+
 https://www.w3schools.com/python/ref_func_print.asp 
 https://data-flair.training/blogs/python-operator/  
 https://github.com/HenkT28/pands-problem-set/blob/master/collatz.py 
@@ -184,6 +186,7 @@ Code Explanation:
 References:
 
 https://www.simplilearn.com/tutorials/python-tutorial/float-in-python#:~:text=Float()%20is%20a%20method,as%20the%20floating%2Dpoint%20output. 
+
 https://thirumalai2024.medium.com/python-program-to-find-square-root-of-the-number-using-newtons-method-937c0e732756 
 https://www.geeksforgeeks.org/find-root-of-a-number-using-newtons-method/ 
 https://towardsdatascience.com/newton-raphson-explained-and-visualised-23f63da21bd5 
@@ -230,6 +233,7 @@ print(letterFrequency((filename), 'e'), (f"occurences of 'e' in the text file.")
 [SampleFile.txt](https://github.com/Sarahlouhast/pands-problems-sheet/blob/main/SampleFile.txt)
 
 References:
+
 https://www.pythonforbeginners.com/system/python-sys-argv 
 https://stackoverflow.com/questions/18047879/opening-files-with-python 
 https://www.w3schools.com/python/python_try_except.asp  
@@ -281,6 +285,7 @@ If you want to save your plot use can do so, note ensure this function is called
 Display the plot using plt.show, note you will need to close out of this if you want to end and run another task.
 
 References:
+
 https://www.geeksforgeeks.org/how-to-plot-normal-distribution-over-histogram-in-python/
 https://matplotlib.org/1.5.3/users/style_sheets.html
 https://scriptverse.academy/tutorials/python-matplotlib-plot-function.html 
