@@ -3,7 +3,9 @@
 #The program should prompt the user and read in two money amounts (in cent), 
 #Add the two amounts
 #Print out the answer in format with a euro sign and decimal point between the euro and cent of the amount 
-#Reference: https://www.w3schools.com/python/python_numbers.asp , https://www.w3schools.com/python/python_howto_add_two_numbers.asp , https://stackabuse.com/format-number-as-currency-string-in-python/ 
+#Reference: https://www.w3schools.com/python/python_numbers.asp 
+           #https://www.w3schools.com/python/python_howto_add_two_numbers.asp 
+           #https://stackabuse.com/format-number-as-currency-string-in-python/ 
 
 
 #Prompt the user to enter integar amounts 

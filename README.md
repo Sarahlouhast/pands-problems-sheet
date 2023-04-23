@@ -6,20 +6,18 @@ Below is a list of each file name and what the program will do once executed.
 
 ## Weekly Task number 1
 
-
 File 1 - Week 1 task called [hello world.py](https://github.com/Sarahlouhast/pands-problems-sheet/blob/main/helloworld.py). This file should contain a python program that displays Hello World! when it is run.
 
 Code: 
 
-``print("Hello World!")``
+```
+print("Hello World!")
 
-
+```
 
 ## Weekly Task number 2
-________________________________________
 
-
-File 2 - Week 2 task called [bank.py](https://github.com/Sarahlouhast/pands-problems-sheet/blob/main/bank.py).  This program should prompt the user and read in two money amounts (in cent) Add the two amounts Print out the answer in a human readable format with a euro sign and decimal point between the euro and cent of the amount. 
+File 2 - Week 2 task called [bank.py](https://github.com/Sarahlouhast/pands-problems-sheet/blob/main/bank.py). This program should prompt the user and read in two money amounts (in cent) Add the two amounts Print out the answer in a human readable format with a euro sign and decimal point between the euro and cent of the amount. 
 
 For example 
 Enter amount1(in cent): 65 
@@ -38,16 +36,19 @@ print (f"The sum of these is €{format_sum}")
 
 Code Explanation:
 
+The user is prompted to enter integar amounts. 
+These are stored in variables num1, num2. 
+The sum is used to calculated the sum of the values entered.
+The format_sum is used format the value.
+And the result will be print with a string of text and the result formatted.
+
 References:
 
 https://www.w3schools.com/python/python_numbers.asp 
 https://www.w3schools.com/python/python_howto_add_two_numbers.asp 
 https://stackabuse.com/format-number-as-currency-string-in-python/ 
 
-
-
 ## Weekly Task number 3 
-________________________________________
 
 File 3 - Week 3 task called [accounts.py](https://github.com/Sarahlouhast/pands-problems-sheet/blob/main/accounts.py). This program that reads in a 10 character account number and outputs the account number with only the last 4 digits showing (and the first 6 digits replaced with Xs). Modify the program to deal with account numbers of any length.
 
@@ -72,7 +73,7 @@ print("x" * (len(account_no_1) - 4) + account_no_1[-4:])
 ```
 
 Code Explanation:
-This code will take only input of 10 numbers, keep asking until the user enters 10 numbers, print error message if 10 digits are not entered. Extra step to the program will modify the program to deal with account numbers of any length, and assuming the next step is to display only the last 4 characters, all other numbers will be replaced with Xs and the end result printed out.
+Using a while loop this This code will take only input of 10 numbers and keep asking until the user enters 10 numbers, printing an error message if 10 digits are not entered. Slicing is used to access the last 4 characters. The rjust function (right-justified) is used to fill the characters to the fill and replace with "x", while keeping the data to the right the same. You will see in the comments the extra step to the program which will modify the program to deal with account numbers of any length, and assuming the next step is to display only the last 4 characters, all other numbers will be replaced with Xs and the end result printed out.
 
 
 References:
@@ -81,16 +82,14 @@ https://www.w3schools.com/python/python_strings_slicing.asp
 https://www.freecodecamp.org/news/python-slicing-how-to-slice-an-array/  
 https://www.w3schools.com/python/ref_string_rjust.asp 
 
-
-
 ## Weekly Task number 4
-________________________________________
 
 File 4 - Week 4 task, called [collatz.py](https://github.com/Sarahlouhast/pands-problems-sheet/blob/main/collatz.py). This program asks the user to input any positive integer and outputs the successive values of the following calculation. At each step calculate the next value by taking the current value and, if it is even, divide it by two, but if it is odd, multiply it by three and add one. Have the program end if the current value is one.
 
 For example 
 Please enter a positive integer: 10
 10 5 16 8 4 2 1
+
 Code:
 
 ```
@@ -111,16 +110,22 @@ else:
 
 Code Explanation:
 
+User is prompted to enter a positive integer, which is stored in variable n. 
+A while loop is set up and will continue until n is 1 based on the program requirement to end at 1. 
+An if statement (if n % 2 == 0:) is used to check is a number is even if division by 2 gives a remainder of 0.   
+Using  n = n // 2, floor division to avoid decimals and this will always give an integer value.    
+Else is needed for odd numbers, where remainder is 1, multiply *3 +1. 
+And finally once n is 1, this will be printed and the program will end.                    
 
 References:
-
-
+https://www.w3schools.com/python/ref_func_print.asp 
+https://data-flair.training/blogs/python-operator/  
+https://github.com/HenkT28/pands-problem-set/blob/master/collatz.py 
+https://data-flair.training/blogs/python-operator/  
 
 ## Weekly Task number 5
-________________________________________
 
 File 5 - Week 5 task, called [weekday.py](https://github.com/Sarahlouhast/pands-problems-sheet/blob/main/weekday.py). 
-
 This program outputs whether or not today is a weekday. An example of running this program on a Thursday is given below.
 
 For example 
@@ -138,13 +143,11 @@ else:
     print("It is the weekend, yay!") # 5 Sat, 6 Sun
 ```
 
-
 Code Explanation:
 
 Firstly, we must import module "datetime" to work with dates in Python. 
 Using the datetime.today() to check the current local datetime, next the weekday() method returns the day of the week as an integer, where Monday is 0 and Sunday is 6, this will be storied in a variable called weekno.
 Using the weekday method as integer values for 0-4 relate to Monday-Friday, while 5,6 are Saturday,Sunday, <5 will relate to any weekdays. If not <5, then 5(Saturday), 6 (Sunday) will relate to weekend days. The result will print out the given statement according to which day of the week it is.
-
 
 References:
 
@@ -153,10 +156,7 @@ https://www.programiz.com/python-programming/datetime/current-datetime
 https://www.datacamp.com/tutorial/python-datetime 
 https://pythontic.com/datetime/date/weekday 
 
-            
-
 ## Weekly Task number 6
-________________________________________
 
 File 6 - Week 6 task, called [squareroot.py](https://github.com/Sarahlouhast/pands-problems-sheet/blob/main/squareroot.py). This program takes a positive floating-point number as input and outputs an approximation of its square root. This program will use the newton method at estimating square roots.
 
@@ -189,13 +189,10 @@ References:
 https://www.simplilearn.com/tutorials/python-tutorial/float-in-python#:~:text=Float()%20is%20a%20method,as%20the%20floating%2Dpoint%20output. 
 https://thirumalai2024.medium.com/python-program-to-find-square-root-of-the-number-using-newtons-method-937c0e732756 
 https://www.geeksforgeeks.org/find-root-of-a-number-using-newtons-method/ 
-https://towardsdatascience.com/newton-raphson-explained-and-visualised-23f63da21bd5 https://runestone.academy/ns/books/published/thinkcspy/MoreAboutIteration/NewtonsMethod.html   
-
-
-
+https://towardsdatascience.com/newton-raphson-explained-and-visualised-23f63da21bd5 
+https://runestone.academy/ns/books/published/thinkcspy/MoreAboutIteration/NewtonsMethod.html   
 
 ## Weekly Task number 7
-________________________________________
 
 File 7 - Week 7 task, called [es.py](https://github.com/Sarahlouhast/pands-problems-sheet/blob/main/es.py). This program reads in a text file and outputs the number of e's it contains. The program should take the filename from an argument on the command line.
 
@@ -222,58 +219,70 @@ print(letterFrequency((filename), 'e'), (f"occurences of the letter 'e' in the t
 
 Code Explanation:
 
+Firstly import sys which will provide access to some variables and functions used or maintained by the python interpreter, in this case we will need the sys.argv which is a list that contains all the arguments passed to the script on the command line. 
+A function is created to return the letter count in the text file.
+In this function a try except is used incase the filename entered does not exist. If it does not exist. An error message will be printed. 
+Using file = open(fileName, 'r') will open the file in read mode.
+Using text = file.read() will store the content of the file in a variable called text.
+Using return text.count(letter) to return the number of times a given value/letter occurs in the file.
+The function is called and printed using the below, displaying the letter count of occurences of lower case'e'.
+print(letterFrequency((filename), 'e'), (f"occurences of 'e' in the text file."))
 
 [es.py](https://github.com/Sarahlouhast/pands-problems-sheet/blob/main/es.py)
 
 [SampleFile.txt](https://github.com/Sarahlouhast/pands-problems-sheet/blob/main/SampleFile.txt)
 
 References:
-
 https://www.pythonforbeginners.com/system/python-sys-argv 
 https://stackoverflow.com/questions/18047879/opening-files-with-python 
-https://www.w3schools.com/python/python_try_except.asp  https://www.geeksforgeeks.org/count-the-number-of-times-a-letter-appears-in-a-text-file-in-python/ 
-
-
+https://www.w3schools.com/python/python_try_except.asp  
+https://www.geeksforgeeks.org/count-the-number-of-times-a-letter-appears-in-a-text-file-in-python/ 
 
 ## Weekly Task number 8
-________________________________________
 
 File 8 - Week 8 task, called [plottask.py](https://github.com/Sarahlouhast/pands-problems-sheet/blob/main/plottask.py), This program displays a histogram of a normal distribution of a 1000 values with a mean of 5 and standard deviation of 2, and a plot of the function h(x)=x3 in the range [0, 10], on the one set of axes.
 
 Code:
 
 ```
-import numpy as np                      #Firstly import numpy, this will allow you to work with arrays, numerical data, mathematical operations
-import matplotlib.pyplot as plt         #Import matplotlib.pyplot, this will allow you to create plots, histograms, decorate these with labels amd much more 
+import numpy as np                    
+import matplotlib.pyplot as plt        
 
-x = np.random.normal(5, 2, 1000)        #Variable x is set here and contains the random.normal method which has 3 parameters (mean, standard deviation, the total number of samples to be drawn), in this case 1000 values with a mean of 5 and standard deviation of 2
-
-plt.style.use('ggplot')                 #This will add a style to the plot, in this case grey background with white grid lines
-plt.hist(x, color='lightgreen', ec='black', label='Normal Distribution')      #This will plot the histogram, give colour lightgreen to the bar and the edges colour black and also label the histogram 
-plt.xlabel("X-Axis", fontsize=16)       #Create label,fontsize for the axis
+x = np.random.normal(5, 2, 1000)        
+plt.style.use('ggplot')             
+plt.hist(x, color='lightgreen', ec='black', label='Normal Distribution')     
+plt.xlabel("X-Axis", fontsize=16)       
 plt.ylabel("Y-Axis", fontsize=16)
-plt.xticks(fontsize=14)                 #Create fontsize for the axis values
+plt.xticks(fontsize=14)                 
 plt.yticks(fontsize=14)
 
 
-x_range = np.linspace(0, 10, 100)       #x_range variable is set and contains the linspace method which will add the plot of the function h(x) = x^3 which will be created next, in the range [0, 10], with 100 numbers
-y = x_range ** 3                        #The cubed function is defined here. If you want to amend this cubed function to squared function for example this can be done easily by changing - y = x_range ** 2 ( and amend the label name in the code to h(x) = x^2)
-plt.plot(x_range, y, color='blue', label='Function h(x) = x^3') #Plot the cubed function, color & label
+x_range = np.linspace(0, 10, 100)       
+y = x_range ** 3                        
+plt.plot(x_range, y, color='blue', label='Function h(x) = x^3') 
 
-
-plt.legend(fontsize=14)                 #This function will display the legend - the labels for histogram function as "Normal Distribution" and the cubed function as "Function h(x) = x^3"
-
-#plt.savefig('My_plot.png') If you want to save your plot use can do so here, note ensure this function is called before the show function, otherwise if it is after the show function your image will be blank
-
-plt.show()                              #Display the plot, note you will need to close out of this if you want to end and run another task
+plt.legend(fontsize=14)  
+#plt.savefig('My_plot.png')
+plt.show()                              
 
 
 ```
 
-
-
-
 Code Explanation:
+
+Firstly import numpy, this will allow you to work with arrays, numerical data, mathematical operations.
+Import matplotlib.pyplot, this will allow you to create plots, histograms, decorate these with labels amd much more.
+Variable x is set and contains the random.normal method which has 3 parameters (mean, standard deviation, the total number of samples to be drawn), in this case 1000 values with a mean of 5 and standard deviation of 2.
+plt.style.use('ggplot') will add a style to the plot, in this case grey background with white grid lines.
+plt.hist will plot the histogram, give colour lightgreen to the bar and the edges colour black and also label the histogram. 
+Labels are set for the axis, giving fontsize and ticks labels are given to axis values and fontsize.
+The x_range variable is set and contains the linspace method which will add the plot of the function h(x) = x^3 which will be created next, in the range [0, 10], with 100 numbers.
+The cubed function is defined in variable y. If you want to amend this cubed function to squared function for example this can be done easily by changing - y = x_range ** 2 ( and amend the label name in the code to h(x) = x^2).
+The Plot function will set the cubed function, color & label.
+The legend function will display the legend - the labels for histogram function as "Normal Distribution" and the cubed function as "Function h(x) = x^3".
+If you want to save your plot use can do so, note ensure this function is called before the show function, otherwise if it is after the show function your image will be blank.
+Display the plot using plt.show, note you will need to close out of this if you want to end and run another task.
+
 References:
 https://www.geeksforgeeks.org/how-to-plot-normal-distribution-over-histogram-in-python/
 https://matplotlib.org/1.5.3/users/style_sheets.html
