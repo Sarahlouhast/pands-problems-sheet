@@ -10,10 +10,7 @@ File 1 - Week 1 task called [hello world.py](https://github.com/Sarahlouhast/pan
 
 Code: 
 
-```
-print("Hello World!")
-
-```
+``print("Hello World!")``
 
 ## Weekly Task number 2
 
