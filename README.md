@@ -33,7 +33,7 @@ print (f"The sum of these is €{format_sum}")
 
 Code Explanation:
 
-The user is prompted to enter integar amounts. 
+The user is prompted to enter integer amounts. 
 These are stored in variables num1, num2. 
 The sum is used to calculated the sum of the values entered.
 The format_sum is used format the value.
@@ -101,8 +101,7 @@ while n !=1:
     else:
         n = n * 3 + 1            
 else:
-        print(n, end= ' ')      
-                               
+        print(n, end= ' ')                                    
 ```
 
 Code Explanation:
@@ -176,7 +175,6 @@ def newtonsqrt(n, tolerance=1e-10):
     return round(approx,1)
     
 print(f"The square root of {num} is approx. {newtonsqrt(num)}.")  
-
 ```
 
 Code Explanation:
@@ -192,11 +190,11 @@ Finally the function is called and the output results printed.
 
 References:
 
-https://www.simplilearn.com/tutorials/python-tutorial/float-in-python#:~:text=Float()%20is%20a%20method,as%20the%20floating%2Dpoint%20output. 
 https://thirumalai2024.medium.com/python-program-to-find-square-root-of-the-number-using-newtons-method-937c0e732756 
 https://www.geeksforgeeks.org/find-root-of-a-number-using-newtons-method/ 
 https://towardsdatascience.com/newton-raphson-explained-and-visualised-23f63da21bd5 
 https://runestone.academy/ns/books/published/thinkcspy/MoreAboutIteration/NewtonsMethod.html   
+https://www.simplilearn.com/tutorials/python-tutorial/float-in-python#:~:text=Float()%20is%20a%20method,as%20the%20floating%2Dpoint%20output. 
 
 ## Weekly Task number 7
 
@@ -266,7 +264,6 @@ plt.plot(x_range, y, color='blue', label='Function h(x) = x^3')
 plt.legend(fontsize=14)  
 #plt.savefig('My_plot.png')
 plt.show()                              
-
 ```
 
 Code Explanation:
