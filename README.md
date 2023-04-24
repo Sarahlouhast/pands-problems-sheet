@@ -71,7 +71,7 @@ print("x" * (len(account_no_1) - 4) + account_no_1[-4:])
 
 Code Explanation:
 
-Using a while loop this code will take only input of 10 numbers and keep asking until the user enters 10 numbers, printing an error message if 10 digits are not entered. Slicing is used to access the last 4 characters, this is a very useful method when accessing data/characters. The rjust function (right-justified) is used to fill the characters to the left and replace with "x", while keeping the data to the right the same, the right specified sliced length, in this case the last 4 characters. You will see in the comments the extra step to the program which will modify the program to deal with account numbers of any length, and assuming the next step is to display only the last 4 characters, all other numbers will be replaced with Xs and the end result printed out.
+Using a while loop this code will take only input of 10 numbers and keep asking until the user enters 10 numbers, printing an error message if 10 digits are not entered. Slicing is used to access the last 4 characters, this is a very useful method when accessing data/characters. The rjust function (right-justified) is used to fill the characters to the left and replace with "x", while keeping the data to the right the same, the right specified sliced length, in this case the last 4 characters. You will see in the comments the extra step to the program, remove the comments if you want to add this step, which will modify the program to deal with account numbers of any length, and assuming the next step is to display only the last 4 characters, all other numbers will be replaced with Xs and the end result printed out.
 
 
 References:
@@ -93,7 +93,6 @@ Code:
 ```
 n = int(input("Please enter a positive integer: "))
 
-
 while n !=1:                     
     print(n, end= ' ')
     if n % 2 == 0:                 
@@ -108,7 +107,7 @@ else:
 
 Code Explanation:
 
-User is prompted to enter a positive integer, which is stored in variable n. 
+The user is prompted to enter a positive integer, which is stored in variable n. 
 A while loop is set up and will continue until n is 1 based on the program requirement to end at 1. 
 An if statement (if n % 2 == 0:) is used to check is a number is even if division by 2 gives a remainder of 0.   
 Using  n = n // 2, floor division to avoid decimals and this will always give an integer value.    
@@ -163,7 +162,6 @@ For example
 Please enter a positive number: 14.5 
 The square root of 14.5 is approx. 3.8.
 
-
 Code:
 
 ```
@@ -202,7 +200,7 @@ https://runestone.academy/ns/books/published/thinkcspy/MoreAboutIteration/Newton
 
 ## Weekly Task number 7
 
-File 7 - Week 7 task, called [es.py](https://github.com/Sarahlouhast/pands-problems-sheet/blob/main/es.py). This program reads in a text file and outputs the number of e's it contains. The program should take the filename from an argument on the command line.
+File 7 - Week 7 task, called [es.py](https://github.com/Sarahlouhast/pands-problems-sheet/blob/main/es.py), [SampleFile.txt](https://github.com/Sarahlouhast/pands-problems-sheet/blob/main/SampleFile.txt). This program reads in a text file and outputs the number of e's it contains. The program should take the filename from an argument on the command line.
 
 For example python es .py moby-dick.txt 
 116960
@@ -236,10 +234,6 @@ Using return text.count(letter) to return the number of times a given value/lett
 The function is called and printed using the below, displaying the letter count of occurences of lower case'e'.
 print(letterFrequency((filename), 'e'), (f"occurences of 'e' in the text file."))
 
-[es.py](https://github.com/Sarahlouhast/pands-problems-sheet/blob/main/es.py)
-
-[SampleFile.txt](https://github.com/Sarahlouhast/pands-problems-sheet/blob/main/SampleFile.txt)
-
 References:
 
 https://www.pythonforbeginners.com/system/python-sys-argv 
@@ -265,7 +259,6 @@ plt.ylabel("Y-Axis", fontsize=16)
 plt.xticks(fontsize=14)                 
 plt.yticks(fontsize=14)
 
-
 x_range = np.linspace(0, 10, 100)       
 y = x_range ** 3                        
 plt.plot(x_range, y, color='blue', label='Function h(x) = x^3') 
@@ -273,7 +266,6 @@ plt.plot(x_range, y, color='blue', label='Function h(x) = x^3')
 plt.legend(fontsize=14)  
 #plt.savefig('My_plot.png')
 plt.show()                              
-
 
 ```
 
@@ -289,7 +281,7 @@ The x_range variable is set and contains the linspace method which will add the 
 The cubed function is defined in variable y. If you want to amend this cubed function to squared function for example this can be done easily by changing - y = x_range ** 2 ( and amend the label name in the code to h(x) = x^2).
 The Plot function will set the cubed function, color & label.
 The legend function will display the legend - the labels for histogram function as "Normal Distribution" and the cubed function as "Function h(x) = x^3".
-If you want to save your plot use can do so, note ensure this function is called before the show function, otherwise if it is after the show function your image will be blank.
+If you want to save your plot use can do so, remove the comment to do this, plt.savefig('My_plot.png'), note ensure this function is called before the show function, otherwise if it is after the show function your image will be blank.
 Display the plot using plt.show, note you will need to close out of this if you want to end and run another task.
 
 References:
@@ -300,18 +292,13 @@ https://scriptverse.academy/tutorials/python-matplotlib-plot-function.html
 https://numpy.org/doc/stable/reference/generated/numpy.linspace.html
 https://data-flair.training/blogs/numpy-applications/ 
 
-
-
-## References and supports for readmilefile
+## References and supports for creating the readmilefile
 ________________________________________
 
 [Markdownguide](https://www.markdownguide.org/basic-syntax/)
 
-
 [Freecodecamp](https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/)
 
-
 [Makeareadme](https://www.makeareadme.com/)
-
 
 [dillinger](https://dillinger.io/)
