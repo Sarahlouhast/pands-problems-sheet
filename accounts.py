@@ -18,9 +18,8 @@ while True:
         break
 
 #Extra step to the program:
-#This will modify the program to deal with account numbers of any length 
+#Remove the comments below to run this. This will modify the program to deal with account numbers of any length 
 #And assuming the next step is to display only the last 4 characters, all other numbers will be replaced with Xs and the end result printed out.
 
-account_no_1 = input("Please enter an account number: ")
-
-print("x" * (len(account_no_1) - 4) + account_no_1[-4:])
+#account_no_1 = input("Please enter an account number: ")
+#print("x" * (len(account_no_1) - 4) + account_no_1[-4:])

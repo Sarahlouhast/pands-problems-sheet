@@ -71,7 +71,7 @@ print("x" * (len(account_no_1) - 4) + account_no_1[-4:])
 
 Code Explanation:
 
-Using a while loop this This code will take only input of 10 numbers and keep asking until the user enters 10 numbers, printing an error message if 10 digits are not entered. Slicing is used to access the last 4 characters. The rjust function (right-justified) is used to fill the characters to the fill and replace with "x", while keeping the data to the right the same. You will see in the comments the extra step to the program which will modify the program to deal with account numbers of any length, and assuming the next step is to display only the last 4 characters, all other numbers will be replaced with Xs and the end result printed out.
+Using a while loop this code will take only input of 10 numbers and keep asking until the user enters 10 numbers, printing an error message if 10 digits are not entered. Slicing is used to access the last 4 characters, this is a very useful method when accessing data/characters. The rjust function (right-justified) is used to fill the characters to the left and replace with "x", while keeping the data to the right the same, the right specified sliced length, in this case the last 4 characters. You will see in the comments the extra step to the program which will modify the program to deal with account numbers of any length, and assuming the next step is to display only the last 4 characters, all other numbers will be replaced with Xs and the end result printed out.
 
 
 References:
