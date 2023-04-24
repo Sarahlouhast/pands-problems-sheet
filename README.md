@@ -2,8 +2,8 @@
 ## Author: Sarah Hastings
 ### Subject: Programming and Scripting
 
-This file contains the files for the weekly tasks for this course, saved to location [pands-problems-sheet](https://github.com/Sarahlouhast/pands-problems-sheet.git).
-Below is a list of each file name, the code for the program, what the program will do once executed including a colde explanation, references used and also a link to the program location.
+This file contains the files for the weekly tasks for this course, saved to location [pands-problems-sheet](https://github.com/Sarahlouhast/pands-problems-sheet.git).  
+Below is a list of each file name, the code for the program, what the program will do once executed including a code explanation, references used and also a link to the program location.  
 Also this file contains all links to references used to read this readme file.
 
 ## Weekly Task number 1
@@ -15,6 +15,9 @@ Code:
 ```
 print("Hello World!")
 ```
+References:
+
+* <https://www.w3schools.com/python/ref_func_print.asp>
 
 ## Weekly Task number 2
 
