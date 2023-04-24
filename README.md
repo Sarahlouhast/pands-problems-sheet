@@ -165,28 +165,36 @@ The square root of 14.5 is approx. 3.8.
 
 
 Code:
-```
-num = float(input("Please enter a positive number: ")) 
 
-def newtonsqrt(n):                                      
-    approx=0.5*n                                        
-    better=0.5*(approx+n/approx)                        
-    while better!=approx:                              
-        approx=better
-        better=0.5*(approx+n/approx)
+```
+num = float(input("Please enter a positive number: "))            
+
+def newtonsqrt(n, tolerance=1e-10):                                                
+    approx=0.5*n                                                                                      
+    better=0.5*(approx+n/approx)                                  
+    while abs(better - approx) > tolerance:                       
+        approx=better                                             
+        better=0.5*(approx+n/approx)                              
     return round(approx,1)
     
 print(f"The square root of {num} is approx. {newtonsqrt(num)}.")  
+
 ```
 
 Code Explanation:
 
-
+Firstly the user is prompted to enter a positive floating point number.
+The square root function is defined using the Newton-Raphson method, which has two parameters it will take in, a number and a tolerance, the tolerance is used to get accuracy.
+Note the tolerance here is set to 1e-10 which is 1 multiplied by 10 to the power of -10, which is 0.0000000001, the function will continue to check the approx value until the difference between the current approx and the true square root is very small, up to a precision of 10 decimal places.                                                      
+Variable approx is set to start with any approximation, half of the input number.
+Then better, which will compute a better approximation using this formula (better=0.5*(approx+n/approx)).
+A while loop is then added to check if the difference between better and approx is greater than the tolerance value, in this case comparing the absolute difference between better and approx to the tolerance value of 1e-10, the loop will stop when the difference is less than the tolerance level.          
+Within this loop, approx is updated to the value of better and better is updated to the new approx value using a formula and the result to rounded to 1 decimal.
+Finally the function is called and the output results printed.
 
 References:
 
 https://www.simplilearn.com/tutorials/python-tutorial/float-in-python#:~:text=Float()%20is%20a%20method,as%20the%20floating%2Dpoint%20output. 
-
 https://thirumalai2024.medium.com/python-program-to-find-square-root-of-the-number-using-newtons-method-937c0e732756 
 https://www.geeksforgeeks.org/find-root-of-a-number-using-newtons-method/ 
 https://towardsdatascience.com/newton-raphson-explained-and-visualised-23f63da21bd5 
