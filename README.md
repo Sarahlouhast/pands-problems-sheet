@@ -10,7 +10,9 @@ File 1 - Week 1 task called [hello world.py](https://github.com/Sarahlouhast/pan
 
 Code: 
 
-``print("Hello World!")``
+```
+print("Hello World!")
+```
 
 ## Weekly Task number 2
 
@@ -41,9 +43,10 @@ And the result will be print with a string of text and the result formatted.
 
 References:
 
-https://www.w3schools.com/python/python_numbers.asp 
-https://www.w3schools.com/python/python_howto_add_two_numbers.asp 
-https://stackabuse.com/format-number-as-currency-string-in-python/ 
+<https://stackabuse.com/format-number-as-currency-string-in-python/>
+<https://www.w3schools.com/python/python_numbers.asp>
+<https://www.w3schools.com/python/python_howto_add_two_numbers.asp>
+
 
 ## Weekly Task number 3 
 
@@ -76,9 +79,9 @@ Using a while loop this code will take only input of 10 numbers and keep asking 
 
 References:
 
-https://www.w3schools.com/python/python_strings_slicing.asp  
-https://www.freecodecamp.org/news/python-slicing-how-to-slice-an-array/  
-https://www.w3schools.com/python/ref_string_rjust.asp 
+<https://www.w3schools.com/python/python_strings_slicing.asp>  
+<https://www.freecodecamp.org/news/python-slicing-how-to-slice-an-array/>  
+<https://www.w3schools.com/python/ref_string_rjust.asp> 
 
 ## Weekly Task number 4
 
@@ -115,10 +118,9 @@ And finally once n is 1, this will be printed and the program will end.
 
 References:
 
-https://www.w3schools.com/python/ref_func_print.asp 
-https://data-flair.training/blogs/python-operator/  
-https://github.com/HenkT28/pands-problem-set/blob/master/collatz.py 
-https://data-flair.training/blogs/python-operator/  
+<https://data-flair.training/blogs/python-operator/> 
+<https://github.com/HenkT28/pands-problem-set/blob/master/collatz.py>  
+<https://www.w3schools.com/python/ref_func_print.asp> 
 
 ## Weekly Task number 5
 
@@ -148,10 +150,10 @@ Using the weekday method as integer values for 0-4 relate to Monday-Friday, whil
 
 References:
 
-https://www.w3schools.com/python/python_datetime.asp   
-https://www.programiz.com/python-programming/datetime/current-datetime  
-https://www.datacamp.com/tutorial/python-datetime 
-https://pythontic.com/datetime/date/weekday 
+<https://www.w3schools.com/python/python_datetime.asp>   
+<https://www.programiz.com/python-programming/datetime/current-datetime>  
+<https://www.datacamp.com/tutorial/python-datetime> 
+<https://pythontic.com/datetime/date/weekday> 
 
 ## Weekly Task number 6
 
@@ -190,11 +192,11 @@ Finally the function is called and the output results printed.
 
 References:
 
-https://thirumalai2024.medium.com/python-program-to-find-square-root-of-the-number-using-newtons-method-937c0e732756, 
-https://www.geeksforgeeks.org/find-root-of-a-number-using-newtons-method/ , 
-https://towardsdatascience.com/newton-raphson-explained-and-visualised-23f63da21bd5 , 
-https://runestone.academy/ns/books/published/thinkcspy/MoreAboutIteration/NewtonsMethod.html , 
-https://www.simplilearn.com/tutorials/python-tutorial/float-in-python#:~:text=Float()%20is%20a%20method,as%20the%20floating%2Dpoint%20output. 
+<https://thirumalai2024.medium.com/python-program-to-find-square-root-of-the-number-using-newtons-method-937c0e732756> 
+<https://www.geeksforgeeks.org/find-root-of-a-number-using-newtons-method/>  
+<https://towardsdatascience.com/newton-raphson-explained-and-visualised-23f63da21bd5> 
+<https://runestone.academy/ns/books/published/thinkcspy/MoreAboutIteration/NewtonsMethod.html> 
+<https://www.simplilearn.com/tutorials/python-tutorial/float-in-python#:~:text=Float()%20is%20a%20method,as%20the%20floating%2Dpoint%20output.> 
 
 ## Weekly Task number 7
 
@@ -234,10 +236,10 @@ print(letterFrequency((filename), 'e'), (f"occurences of 'e' in the text file.")
 
 References:
 
-https://www.pythonforbeginners.com/system/python-sys-argv 
-https://stackoverflow.com/questions/18047879/opening-files-with-python 
-https://www.w3schools.com/python/python_try_except.asp  
-https://www.geeksforgeeks.org/count-the-number-of-times-a-letter-appears-in-a-text-file-in-python/ 
+<https://www.pythonforbeginners.com/system/python-sys-argv> 
+<https://stackoverflow.com/questions/18047879/opening-files-with-python> 
+<https://www.w3schools.com/python/python_try_except.asp>  
+<https://www.geeksforgeeks.org/count-the-number-of-times-a-letter-appears-in-a-text-file-in-python/>
 
 ## Weekly Task number 8
 
@@ -283,11 +285,11 @@ Display the plot using plt.show, note you will need to close out of this if you 
 
 References:
 
-https://www.geeksforgeeks.org/how-to-plot-normal-distribution-over-histogram-in-python/
-https://matplotlib.org/1.5.3/users/style_sheets.html
-https://scriptverse.academy/tutorials/python-matplotlib-plot-function.html 
-https://numpy.org/doc/stable/reference/generated/numpy.linspace.html
-https://data-flair.training/blogs/numpy-applications/ 
+<https://scriptverse.academy/tutorials/python-matplotlib-plot-function.html> 
+<https://www.geeksforgeeks.org/how-to-plot-normal-distribution-over-histogram-in-python/>
+<https://matplotlib.org/1.5.3/users/style_sheets.html>
+<https://numpy.org/doc/stable/reference/generated/numpy.linspace.html>
+<https://data-flair.training/blogs/numpy-applications/> 
 
 ## References and supports for creating the readmilefile
 ________________________________________
