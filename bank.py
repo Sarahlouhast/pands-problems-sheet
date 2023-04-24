@@ -8,13 +8,13 @@
            #https://stackabuse.com/format-number-as-currency-string-in-python/ 
 
 
-#Prompt the user to enter integar amounts 
-num1 = int(input("Enter amount1(in cent):"))
+
+num1 = int(input("Enter amount1(in cent):"))        #Prompt the user to enter integer amounts, which will be stored in num1, num2 
 num2 =  int(input("Enter amount2(in cent):"))
 sum= num1 + num2                                    #Calculate the sum of the values entered
-format_sum = format(sum/100)                        #Format the value
+format_sum = format(sum/100)                        #Format the value, stored in a variable to be used below
 
-print (f"The sum of these is €{format_sum}")        
+print (f"The sum of these is €{format_sum}")        #The sum result is printed out in the specified format
 
 
 
