@@ -190,15 +190,15 @@ Finally the function is called and the output results printed.
 
 References:
 
-https://thirumalai2024.medium.com/python-program-to-find-square-root-of-the-number-using-newtons-method-937c0e732756 
-https://www.geeksforgeeks.org/find-root-of-a-number-using-newtons-method/ 
-https://towardsdatascience.com/newton-raphson-explained-and-visualised-23f63da21bd5 
-https://runestone.academy/ns/books/published/thinkcspy/MoreAboutIteration/NewtonsMethod.html   
+https://thirumalai2024.medium.com/python-program-to-find-square-root-of-the-number-using-newtons-method-937c0e732756, 
+https://www.geeksforgeeks.org/find-root-of-a-number-using-newtons-method/ , 
+https://towardsdatascience.com/newton-raphson-explained-and-visualised-23f63da21bd5 , 
+https://runestone.academy/ns/books/published/thinkcspy/MoreAboutIteration/NewtonsMethod.html , 
 https://www.simplilearn.com/tutorials/python-tutorial/float-in-python#:~:text=Float()%20is%20a%20method,as%20the%20floating%2Dpoint%20output. 
 
 ## Weekly Task number 7
 
-File 7 - Week 7 task, called [es.py](https://github.com/Sarahlouhast/pands-problems-sheet/blob/main/es.py), [SampleFile.txt](https://github.com/Sarahlouhast/pands-problems-sheet/blob/main/SampleFile.txt). This program reads in a text file and outputs the number of e's it contains. The program should take the filename from an argument on the command line.
+File 7 - Week 7 task, called [es.py](https://github.com/Sarahlouhast/pands-problems-sheet/blob/main/es.py), and sample file called [SampleFile.txt](https://github.com/Sarahlouhast/pands-problems-sheet/blob/main/SampleFile.txt) used to test the program. This program reads in a text file and outputs the number of e's it contains. The program should take the filename from an argument on the command line.
 
 For example python es .py moby-dick.txt 
 116960
